@@ -130,6 +130,7 @@ ol {
 .discovery-container {
   .el-carousel__container {
     height: 230px;
+	margin-top:10px;
   }
   .el-carousel__item img {
     width: 100%;
@@ -1085,8 +1086,9 @@ ol {
       cursor: pointer;
       display: flex;
       align-items: center;
+	  transition:all 0.6s;
       &:hover {
-        background-color: #e7e7e7;
+        background-color: rgba(0,0,0,.1);
       }
       .iconfont {
         margin-right: 10px;
@@ -1107,6 +1109,9 @@ ol {
         }
       }
     }
+	li:nth-child(1){
+		margin-top:10px;
+	}
   }
   .main {
     flex: 1;
@@ -1135,7 +1140,8 @@ ol {
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
-  background-color: #f9f9f9;
+  // background-color: #f9f9f9;
+  background-color: black;
   width: 100%;
   .left-box {
     display: flex;
@@ -1143,10 +1149,11 @@ ol {
     .icon-wrapper {
       margin-right: 80px;
       .iconfont {
-        margin-right: 10px;
+        margin:20px 10px;
+		margin-bottom:0;
         font-size: 12px;
-        width: 18px;
-        height: 18px;
+        width: 20px;
+        height: 20px;
         display: inline-block;
         text-align: center;
         line-height: 18px;
@@ -1163,11 +1170,11 @@ ol {
         }
         &.icon-sami-select {
           background-color: #dcc060;
-          border-radius: 50%;
+          border-radius:  50%;
         }
         &.icon-full-screen {
           background-color: #84bb58;
-          border-radius: 50%;
+          border-radius:  50%;
         }
       }
     }
@@ -1190,6 +1197,7 @@ ol {
         }
         &:hover {
           background-color: #ebebeb;
+		  color:red;
         }
       }
     }
@@ -1197,6 +1205,18 @@ ol {
   .right-box {
     display: flex;
     align-items: center;
+	img{
+		width:35px;
+		height:35px;
+		margin-left:50px;
+		cursor:pointer;
+		border:2px solid white;
+		border-radius:50%;
+		transition:all 1.5s;
+	}
+	img:hover{
+		transform:rotate(360deg);
+	}
   }
 }
 #app {

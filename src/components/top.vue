@@ -15,6 +15,7 @@
       <el-input size="small" @keyup.enter.native="toResult" placeholder="搜索" v-model.trim="query">
         <i slot="prefix" class="el-input__icon el-icon-search"></i>
       </el-input>
+		<img src="../assets/pic-1.jpg" alt="图片加载失败!">
     </div>
   </div>
 </template>
