@@ -1,6 +1,7 @@
 <template>
   <div class="index-container">
     <div class="nav" >
+		<img src="../../public/music_3gif.gif" alt="图片加载失败!" id="music_3">
       <ul>
         <li>
           <router-link to="/discovery">
@@ -26,6 +27,9 @@
             最新MV
           </router-link>
         </li>
+		<span id="jianjie">
+			<img src="../../public/icon_1.jpg" alt="图片加载失败!">
+		</span>
       </ul>
     </div>
     <div class="main">
@@ -49,6 +53,9 @@ export default {
 };
 </script>
 
-<style lang="scss">
-
+<style lang="css">
+@keyframes move{
+	from{transform: rotate(0deg);}
+	to{transform: rotate(360deg);}
+}
 </style>
