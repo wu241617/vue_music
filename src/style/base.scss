@@ -1275,6 +1275,12 @@ ol {
 	margin-top:20px;
 	border-radius: 20%;
 	border:1px solid lightcoral;
+	cursor:pointer;
+	overflow: hidden;
+	transition: all 1s;
+}
+#jianjie:hover img{
+	transform: scale(0.95);
 }
 #jianjie img{
 	width:100%;
@@ -1283,4 +1289,11 @@ ol {
 }
 .mvs-container .filter-wrap > div{
 	margin-bottom:15px;
+}
+.top-container .left-box .history-wrapper .iconfont{
+	color:white;
+	opacity: .8;
+}
+.top-container .left-box .icon-wrapper{
+	margin-left:20px;
 }

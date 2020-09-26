@@ -2,7 +2,9 @@ import Vue from 'vue';
 import App from './App.vue';
 
 // 导入Element-ui
-import element from '@/utils/element'
+import element from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+// import element from '@/utils/element'
 Vue.use(element)
 
 // 导入全局初始化样式
